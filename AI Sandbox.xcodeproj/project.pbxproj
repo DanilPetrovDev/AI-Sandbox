@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C33D8B02A56F34C0076CA0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C33D8AF2A56F34C0076CA0E /* Preview Assets.xcassets */; };
+		2C33D8CC2A56F3930076CA0E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8BD2A56F3930076CA0E /* Persistence.swift */; };
+		2C33D8CD2A56F3930076CA0E /* OpenAIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8BE2A56F3930076CA0E /* OpenAIModel.swift */; };
+		2C33D8CE2A56F3930076CA0E /* PersistanceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C02A56F3930076CA0E /* PersistanceFunctions.swift */; };
+		2C33D8CF2A56F3930076CA0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C33D8C12A56F3930076CA0E /* Assets.xcassets */; };
+		2C33D8D02A56F3930076CA0E /* AI_Sandbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C22A56F3930076CA0E /* AI_Sandbox.xcdatamodeld */; };
+		2C33D8D12A56F3930076CA0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C42A56F3930076CA0E /* ContentView.swift */; };
+		2C33D8D22A56F3930076CA0E /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C62A56F3930076CA0E /* SendButton.swift */; };
+		2C33D8D32A56F3930076CA0E /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C72A56F3930076CA0E /* MessageField.swift */; };
+		2C33D8D42A56F3930076CA0E /* BackgroundLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C82A56F3930076CA0E /* BackgroundLogo.swift */; };
+		2C33D8D52A56F3930076CA0E /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8C92A56F3930076CA0E /* MessageList.swift */; };
+		2C33D8D62A56F3930076CA0E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8CA2A56F3930076CA0E /* MessageView.swift */; };
+		2C33D8D72A56F3930076CA0E /* AI_SandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8CB2A56F3930076CA0E /* AI_SandboxApp.swift */; };
+		2C33D8DA2A56F3DA0076CA0E /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C33D8D92A56F3DA0076CA0E /* OpenAISwift */; };
+		2C33D8DD2A56F3E70076CA0E /* GPTEncoder in Frameworks */ = {isa = PBXBuildFile; productRef = 2C33D8DC2A56F3E70076CA0E /* GPTEncoder */; };
+		2C33D8E32A5960B50076CA0E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C33D8E22A5960B50076CA0E /* ChatView.swift */; };
+		2C8E022C2A5AF8CF0026EE52 /* DeleteMessagesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E022B2A5AF8CF0026EE52 /* DeleteMessagesButton.swift */; };
+		2C8E02302A5B18260026EE52 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E022F2A5B18260026EE52 /* ChatList.swift */; };
+		2CC02FFB2A5ACDA60094E9EC /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC02FFA2A5ACDA60094E9EC /* PlusButton.swift */; };
+		2CC02FFD2A5AE3F60094E9EC /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC02FFC2A5AE3F60094E9EC /* ChatRow.swift */; };
+		2CE50D282A5E566C00F03C0F /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D272A5E566B00F03C0F /* HelperFunctions.swift */; };
+		2CE50D2B2A5E5BF700F03C0F /* ConfigList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D2A2A5E5BF700F03C0F /* ConfigList.swift */; };
+		2CE50D2D2A5E5BFF00F03C0F /* ConfigRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D2C2A5E5BFF00F03C0F /* ConfigRow.swift */; };
+		2CE50D2F2A5E657600F03C0F /* CounterToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D2E2A5E657600F03C0F /* CounterToolbar.swift */; };
+		2CE50D312A5E72AE00F03C0F /* ConfigEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D302A5E72AE00F03C0F /* ConfigEditView.swift */; };
+		2CE50D332A5E975C00F03C0F /* DefaultCoreDataValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D322A5E975C00F03C0F /* DefaultCoreDataValues.swift */; };
+		2CE50D352A5E9F0700F03C0F /* ChatEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D342A5E9F0700F03C0F /* ChatEditView.swift */; };
+		2CE50D372A5F932E00F03C0F /* EditStringSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D362A5F932E00F03C0F /* EditStringSection.swift */; };
+		2CE50D392A5FA39500F03C0F /* NewConfigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D382A5FA39500F03C0F /* NewConfigButton.swift */; };
+		2CE50D3B2A5FA60300F03C0F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D3A2A5FA60200F03C0F /* SplashView.swift */; };
+		2CE50D3D2A642B7100F03C0F /* NewChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D3C2A642B7100F03C0F /* NewChatButton.swift */; };
+		2CE50D3F2A6456FC00F03C0F /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D3E2A6456FC00F03C0F /* ConfigManager.swift */; };
+		2CE50D412A64629200F03C0F /* FeaturedConfigPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE50D402A64629200F03C0F /* FeaturedConfigPreview.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C33D8A52A56F34B0076CA0E /* AI Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C33D8AF2A56F34C0076CA0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C33D8BD2A56F3930076CA0E /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2C33D8BE2A56F3930076CA0E /* OpenAIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIModel.swift; sourceTree = "<group>"; };
+		2C33D8C02A56F3930076CA0E /* PersistanceFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceFunctions.swift; sourceTree = "<group>"; };
+		2C33D8C12A56F3930076CA0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C33D8C32A56F3930076CA0E /* GPT_Sandbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPT_Sandbox.xcdatamodel; sourceTree = "<group>"; };
+		2C33D8C42A56F3930076CA0E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C33D8C62A56F3930076CA0E /* SendButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		2C33D8C72A56F3930076CA0E /* MessageField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		2C33D8C82A56F3930076CA0E /* BackgroundLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLogo.swift; sourceTree = "<group>"; };
+		2C33D8C92A56F3930076CA0E /* MessageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
+		2C33D8CA2A56F3930076CA0E /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2C33D8CB2A56F3930076CA0E /* AI_SandboxApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AI_SandboxApp.swift; sourceTree = "<group>"; };
+		2C33D8E22A5960B50076CA0E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		2C8E022B2A5AF8CF0026EE52 /* DeleteMessagesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMessagesButton.swift; sourceTree = "<group>"; };
+		2C8E022F2A5B18260026EE52 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		2CC02FFA2A5ACDA60094E9EC /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		2CC02FFC2A5AE3F60094E9EC /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		2CE50D272A5E566B00F03C0F /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		2CE50D2A2A5E5BF700F03C0F /* ConfigList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigList.swift; sourceTree = "<group>"; };
+		2CE50D2C2A5E5BFF00F03C0F /* ConfigRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigRow.swift; sourceTree = "<group>"; };
+		2CE50D2E2A5E657600F03C0F /* CounterToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterToolbar.swift; sourceTree = "<group>"; };
+		2CE50D302A5E72AE00F03C0F /* ConfigEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigEditView.swift; sourceTree = "<group>"; };
+		2CE50D322A5E975C00F03C0F /* DefaultCoreDataValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoreDataValues.swift; sourceTree = "<group>"; };
+		2CE50D342A5E9F0700F03C0F /* ChatEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEditView.swift; sourceTree = "<group>"; };
+		2CE50D362A5F932E00F03C0F /* EditStringSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStringSection.swift; sourceTree = "<group>"; };
+		2CE50D382A5FA39500F03C0F /* NewConfigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConfigButton.swift; sourceTree = "<group>"; };
+		2CE50D3A2A5FA60200F03C0F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2CE50D3C2A642B7100F03C0F /* NewChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatButton.swift; sourceTree = "<group>"; };
+		2CE50D3E2A6456FC00F03C0F /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		2CE50D402A64629200F03C0F /* FeaturedConfigPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedConfigPreview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C33D8A22A56F34B0076CA0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C33D8DA2A56F3DA0076CA0E /* OpenAISwift in Frameworks */,
+				2C33D8DD2A56F3E70076CA0E /* GPTEncoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C33D89C2A56F34B0076CA0E = {
+			isa = PBXGroup;
+			children = (
+				2C33D8A72A56F34B0076CA0E /* AI Sandbox */,
+				2C33D8A62A56F34B0076CA0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C33D8A62A56F34B0076CA0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8A52A56F34B0076CA0E /* AI Sandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C33D8A72A56F34B0076CA0E /* AI Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8CB2A56F3930076CA0E /* AI_SandboxApp.swift */,
+				2C33D8C42A56F3930076CA0E /* ContentView.swift */,
+				2CE50D3A2A5FA60200F03C0F /* SplashView.swift */,
+				2C33D8C52A56F3930076CA0E /* VIews */,
+				2C33D8BC2A56F3930076CA0E /* Models */,
+				2C33D8BF2A56F3930076CA0E /* Functions */,
+				2C33D8C22A56F3930076CA0E /* AI_Sandbox.xcdatamodeld */,
+				2C33D8C12A56F3930076CA0E /* Assets.xcassets */,
+				2C33D8AE2A56F34C0076CA0E /* Preview Content */,
+			);
+			path = "AI Sandbox";
+			sourceTree = "<group>";
+		};
+		2C33D8AE2A56F34C0076CA0E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8AF2A56F34C0076CA0E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C33D8BC2A56F3930076CA0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8BD2A56F3930076CA0E /* Persistence.swift */,
+				2CE50D322A5E975C00F03C0F /* DefaultCoreDataValues.swift */,
+				2C33D8BE2A56F3930076CA0E /* OpenAIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C33D8BF2A56F3930076CA0E /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8C02A56F3930076CA0E /* PersistanceFunctions.swift */,
+				2CE50D3E2A6456FC00F03C0F /* ConfigManager.swift */,
+				2CE50D272A5E566B00F03C0F /* HelperFunctions.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		2C33D8C52A56F3930076CA0E /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				2CE50D292A5E5BEC00F03C0F /* ConfigList */,
+				2C8E02312A5B18870026EE52 /* ChatList */,
+				2CE50D252A5E39E000F03C0F /* Universal */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		2C8E02312A5B18870026EE52 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E022F2A5B18260026EE52 /* ChatList.swift */,
+				2CE50D3C2A642B7100F03C0F /* NewChatButton.swift */,
+				2CE50D302A5E72AE00F03C0F /* ConfigEditView.swift */,
+				2CC02FFC2A5AE3F60094E9EC /* ChatRow.swift */,
+				2CE50D262A5E3BB400F03C0F /* Chat */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		2C8E02322A5B18AE0026EE52 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8C92A56F3930076CA0E /* MessageList.swift */,
+				2C33D8CA2A56F3930076CA0E /* MessageView.swift */,
+				2C33D8C72A56F3930076CA0E /* MessageField.swift */,
+				2C33D8C82A56F3930076CA0E /* BackgroundLogo.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		2CE50D252A5E39E000F03C0F /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				2CE50D362A5F932E00F03C0F /* EditStringSection.swift */,
+				2C33D8C62A56F3930076CA0E /* SendButton.swift */,
+				2CE50D2E2A5E657600F03C0F /* CounterToolbar.swift */,
+				2CC02FFA2A5ACDA60094E9EC /* PlusButton.swift */,
+			);
+			path = Universal;
+			sourceTree = "<group>";
+		};
+		2CE50D262A5E3BB400F03C0F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2C33D8E22A5960B50076CA0E /* ChatView.swift */,
+				2CE50D342A5E9F0700F03C0F /* ChatEditView.swift */,
+				2C8E022B2A5AF8CF0026EE52 /* DeleteMessagesButton.swift */,
+				2C8E02322A5B18AE0026EE52 /* Messages */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2CE50D292A5E5BEC00F03C0F /* ConfigList */ = {
+			isa = PBXGroup;
+			children = (
+				2CE50D2A2A5E5BF700F03C0F /* ConfigList.swift */,
+				2CE50D382A5FA39500F03C0F /* NewConfigButton.swift */,
+				2CE50D2C2A5E5BFF00F03C0F /* ConfigRow.swift */,
+				2CE50D402A64629200F03C0F /* FeaturedConfigPreview.swift */,
+			);
+			path = ConfigList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C33D8A42A56F34B0076CA0E /* AI Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C33D8B82A56F34C0076CA0E /* Build configuration list for PBXNativeTarget "AI Sandbox" */;
+			buildPhases = (
+				2C33D8A12A56F34B0076CA0E /* Sources */,
+				2C33D8A22A56F34B0076CA0E /* Frameworks */,
+				2C33D8A32A56F34B0076CA0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AI Sandbox";
+			packageProductDependencies = (
+				2C33D8D92A56F3DA0076CA0E /* OpenAISwift */,
+				2C33D8DC2A56F3E70076CA0E /* GPTEncoder */,
+			);
+			productName = "AI Sandbox";
+			productReference = 2C33D8A52A56F34B0076CA0E /* AI Sandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C33D89D2A56F34B0076CA0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2C33D8A42A56F34B0076CA0E = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = 2C33D8A02A56F34B0076CA0E /* Build configuration list for PBXProject "AI Sandbox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C33D89C2A56F34B0076CA0E;
+			packageReferences = (
+				2C33D8D82A56F3DA0076CA0E /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				2C33D8DB2A56F3E70076CA0E /* XCRemoteSwiftPackageReference "GPTEncoder" */,
+			);
+			productRefGroup = 2C33D8A62A56F34B0076CA0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C33D8A42A56F34B0076CA0E /* AI Sandbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C33D8A32A56F34B0076CA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C33D8CF2A56F3930076CA0E /* Assets.xcassets in Resources */,
+				2C33D8B02A56F34C0076CA0E /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C33D8A12A56F34B0076CA0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE50D3D2A642B7100F03C0F /* NewChatButton.swift in Sources */,
+				2C33D8D42A56F3930076CA0E /* BackgroundLogo.swift in Sources */,
+				2C8E022C2A5AF8CF0026EE52 /* DeleteMessagesButton.swift in Sources */,
+				2CE50D2F2A5E657600F03C0F /* CounterToolbar.swift in Sources */,
+				2C33D8CC2A56F3930076CA0E /* Persistence.swift in Sources */,
+				2CE50D372A5F932E00F03C0F /* EditStringSection.swift in Sources */,
+				2C33D8D72A56F3930076CA0E /* AI_SandboxApp.swift in Sources */,
+				2C33D8D12A56F3930076CA0E /* ContentView.swift in Sources */,
+				2C8E02302A5B18260026EE52 /* ChatList.swift in Sources */,
+				2C33D8E32A5960B50076CA0E /* ChatView.swift in Sources */,
+				2C33D8D02A56F3930076CA0E /* AI_Sandbox.xcdatamodeld in Sources */,
+				2C33D8D62A56F3930076CA0E /* MessageView.swift in Sources */,
+				2CE50D412A64629200F03C0F /* FeaturedConfigPreview.swift in Sources */,
+				2CE50D332A5E975C00F03C0F /* DefaultCoreDataValues.swift in Sources */,
+				2CC02FFB2A5ACDA60094E9EC /* PlusButton.swift in Sources */,
+				2CE50D392A5FA39500F03C0F /* NewConfigButton.swift in Sources */,
+				2C33D8D32A56F3930076CA0E /* MessageField.swift in Sources */,
+				2C33D8D52A56F3930076CA0E /* MessageList.swift in Sources */,
+				2C33D8D22A56F3930076CA0E /* SendButton.swift in Sources */,
+				2CE50D2B2A5E5BF700F03C0F /* ConfigList.swift in Sources */,
+				2CE50D3F2A6456FC00F03C0F /* ConfigManager.swift in Sources */,
+				2CE50D312A5E72AE00F03C0F /* ConfigEditView.swift in Sources */,
+				2CE50D352A5E9F0700F03C0F /* ChatEditView.swift in Sources */,
+				2CE50D282A5E566C00F03C0F /* HelperFunctions.swift in Sources */,
+				2CE50D3B2A5FA60300F03C0F /* SplashView.swift in Sources */,
+				2C33D8CE2A56F3930076CA0E /* PersistanceFunctions.swift in Sources */,
+				2CC02FFD2A5AE3F60094E9EC /* ChatRow.swift in Sources */,
+				2CE50D2D2A5E5BFF00F03C0F /* ConfigRow.swift in Sources */,
+				2C33D8CD2A56F3930076CA0E /* OpenAIModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2C33D8B62A56F34C0076CA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C33D8B72A56F34C0076CA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C33D8B92A56F34C0076CA0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"AI Sandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WV5QYYZHM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Sandbox";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "DanilPetrov.AI-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C33D8BA2A56F34C0076CA0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"AI Sandbox/Preview Content\"";
+				DEVELOPMENT_TEAM = 8WV5QYYZHM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Sandbox";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "DanilPetrov.AI-Sandbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C33D8A02A56F34B0076CA0E /* Build configuration list for PBXProject "AI Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C33D8B62A56F34C0076CA0E /* Debug */,
+				2C33D8B72A56F34C0076CA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C33D8B82A56F34C0076CA0E /* Build configuration list for PBXNativeTarget "AI Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C33D8B92A56F34C0076CA0E /* Debug */,
+				2C33D8BA2A56F34C0076CA0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C33D8D82A56F3DA0076CA0E /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2C33D8DB2A56F3E70076CA0E /* XCRemoteSwiftPackageReference "GPTEncoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/GPTEncoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C33D8D92A56F3DA0076CA0E /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C33D8D82A56F3DA0076CA0E /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		2C33D8DC2A56F3E70076CA0E /* GPTEncoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C33D8DB2A56F3E70076CA0E /* XCRemoteSwiftPackageReference "GPTEncoder" */;
+			productName = GPTEncoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2C33D8C22A56F3930076CA0E /* AI_Sandbox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C33D8C32A56F3930076CA0E /* GPT_Sandbox.xcdatamodel */,
+			);
+			currentVersion = 2C33D8C32A56F3930076CA0E /* GPT_Sandbox.xcdatamodel */;
+			path = AI_Sandbox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C33D89D2A56F34B0076CA0E /* Project object */;
+}
